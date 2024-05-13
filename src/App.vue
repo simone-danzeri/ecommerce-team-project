@@ -1,9 +1,11 @@
 <script>
 
 import AppSlider from './components/AppSlider.vue'
+import AppHeader from './components/AppHeader.vue'
 
 export default {
     components: {
+        AppHeader,
         AppSlider
     },
 }
@@ -11,6 +13,10 @@ export default {
 </script>
 
 <template>
+
+    <header>
+        <AppHeader></AppHeader>
+    </header>
 
     <main>
         <AppSlider></AppSlider>
