@@ -1,9 +1,10 @@
 <script>
 
+import AppSlider from './components/AppSlider.vue'
+
 export default {
     components: {
-
-
+        AppSlider
     },
 }
 
@@ -11,9 +12,8 @@ export default {
 
 <template>
 
-    <h1>ciao</h1>
     <main>
-
+        <AppSlider></AppSlider>
     </main>
 
 </template>
