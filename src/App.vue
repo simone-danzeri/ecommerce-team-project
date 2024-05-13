@@ -12,17 +12,14 @@ export default {
 <template>
 
     <h1>ciao</h1>
+    <main>
+
+    </main>
 
 </template>
 
 <style lang="scss">
 
     @use './style/generic'; 
-    @use './style/partials/variables' as *;
-
-
-    h1 {
-        color: $secondary-color;
-    }
 
 </style>
