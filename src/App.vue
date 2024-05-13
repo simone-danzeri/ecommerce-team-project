@@ -2,11 +2,13 @@
 
 import AppSlider from './components/AppSlider.vue'
 import AppHeader from './components/AppHeader.vue'
+import AppFooter from './components/AppFooter.vue'; 
 
 export default {
     components: {
         AppHeader,
-        AppSlider
+        AppSlider,
+        AppFooter
     },
 }
 
@@ -21,6 +23,10 @@ export default {
     <main>
         <AppSlider></AppSlider>
     </main>
+
+    <footer>
+        <AppFooter></AppFooter>
+    </footer>
 
 </template>
 
