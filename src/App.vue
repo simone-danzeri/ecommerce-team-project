@@ -15,4 +15,14 @@ export default {
 
 </template>
 
-<style></style>
+<style lang="scss">
+
+    @use './style/generic'; 
+    @use './style/partials/variables' as *;
+
+
+    h1 {
+        color: $secondary-color;
+    }
+
+</style>
