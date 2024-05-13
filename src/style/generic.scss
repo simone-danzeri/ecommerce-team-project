@@ -8,12 +8,21 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 /*-----------------
         GENERAL
 -------------------*/
 
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #e3e6e6;
 }
 
 
