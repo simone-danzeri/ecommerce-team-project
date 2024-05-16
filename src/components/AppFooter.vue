@@ -20,8 +20,8 @@ export default {
 </script>
 
 <template>
-	<div class="container">
-		<div class="ms-footer-top-container d-flex justify-content-around py-4">
+	<div class="ms-footer-top">
+		<div class="container ms-footer-top-container d-flex justify-content-around py-4">
 			<!-- Conoscersi meglio -->
 			<div class="ms-get-to-know-links">
 				<ul>
@@ -59,6 +59,7 @@ export default {
 				</ul>
 			</div>
 		</div>
+	</div>
 		<!-- Bottone per tornare in top??? -->
 		<div class="ms-back-top d-flex justify-content-center align-items-center" @click="scrollToTop()">
 			<!-- altezza fissa -->
@@ -70,7 +71,7 @@ export default {
 			<div class="ms-logo-footer-container d-flex justify-content-center py-4">
 				<img src="../assets/img/amazon-logo.jpg" alt="..." />
 			</div>
-			<div class="ms-country-list-container py-4">
+			<div class="container ms-country-list-container py-4">
 				<ul class="d-flex justify-content-center flex-wrap">
 					<li v-for="eachCountry in footerCountries" class="mx-3 pb-2">
 						<a class="fw-lighter" href="#">{{ eachCountry }}</a>
@@ -78,13 +79,12 @@ export default {
 				</ul>
 			</div>
 		</section>
-	</div>
 </template>
 
 <style scoped lang="scss">
 @use "../style/partials/variables" as *;
 
-.ms-footer-top-container {
+.ms-footer-top{
 	background-color: $secondary-color;
 
 	ul {
