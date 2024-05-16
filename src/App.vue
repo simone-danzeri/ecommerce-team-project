@@ -39,7 +39,25 @@ export default {
                 'Amazon Prime',
                 'Restituisci un ordine',
                 'Servizio Clienti'
-            ]
+            ],
+            footerCountries: [
+                'Australia',
+                'Brasile',
+                'Canada',
+                'Cina',
+                'Francia',
+                'Giappone',
+                'India',
+                'Messico',
+                'Paesi Bassi',
+                'Polonia',
+                'Emirati Arabi Uniti',
+                'Regno Unito',
+                'Spagna',
+                'Singapore',
+                'Stati Uniti',
+                'Turchia'
+            ],
         }
     }
 }
@@ -57,7 +75,7 @@ export default {
     </main>
 
     <footer>
-        <AppFooter :footerKnowLinks="footerKnowLinks" :footerEarnLinks="footerEarnLinks" :footerPaymentsLinks="footerPaymentsLinks" :footerHelpLinks="footerHelpLinks"></AppFooter>
+        <AppFooter :footerKnowLinks="footerKnowLinks" :footerEarnLinks="footerEarnLinks" :footerPaymentsLinks="footerPaymentsLinks" :footerHelpLinks="footerHelpLinks" :footerCountries="footerCountries"></AppFooter>
     </footer>
 
 </template>

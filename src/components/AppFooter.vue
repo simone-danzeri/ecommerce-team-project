@@ -5,7 +5,8 @@
             footerKnowLinks: Array,
             footerEarnLinks: Array,
             footerPaymentsLinks: Array,
-            footerHelpLinks: Array
+            footerHelpLinks: Array,
+            footerCountries: Array
         }
     }
 </script>
@@ -50,6 +51,21 @@
                 </ul>
             </div>
         </div>
+            <!-- Bottone per tornare in top??? -->
+            <!-- Sezione mid del footer con logo e lista paesi -->
+            <section class="ms-mid-footer">
+                <hr class="ms-hr">
+                <div class="ms-logo-footer-container d-flex justify-content-center py-4">
+                    <img src="../assets/img/amazon-logo.jpg" alt="...">
+                </div>
+                <div class="ms-country-list-container py-4">
+                    <ul class="d-flex justify-content-center flex-wrap">
+                        <li v-for="eachCountry in footerCountries" class="mx-3 pb-2">
+                            <a class="fw-lighter" href="#">{{ eachCountry }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
     </div>
 </template>
 
@@ -60,6 +76,31 @@
     background-color: $secondary-color;
     ul{
         list-style: none;
+        li{
+            list-style: none;
+            a{
+                text-decoration: none;
+                color: #fff;
+            }
+        }
+    }
+}
+.ms-mid-footer{
+    background-color: $secondary-color;
+    .ms-hr{
+        border: 1px solid darkgray;
+    }
+    .ms-logo-footer-container{
+        margin: 0 auto;
+        img{
+            max-width: 8%;
+        }
+    }
+}
+.ms-country-list-container{
+    ul{
+        list-style: none;
+        margin-left: -32px;
         li{
             list-style: none;
             a{
